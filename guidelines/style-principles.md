@@ -53,6 +53,8 @@ Use `.dark` or `[data-theme="dark"]` on a root element to switch CSS variables.
 
 ## Palette discipline
 
+Bricks uses [Dim Sum](../docs/color-reference.md) as the broader color reference library, but Bricks core remains stricter than a terminal/editor theme. Product UI should use Bricks semantic tokens first; Dim Sum is consulted when expanding the palette, not when styling one-off components.
+
 | Role | Token | Usage |
 |---|---|---|
 | Surface | `--bricks-color-surface` | Page/app background |

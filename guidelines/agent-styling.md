@@ -9,7 +9,8 @@ Before changing UI code:
 1. Read `README.md`.
 2. Read `styles/tokens.css`.
 3. Read `guidelines/style-principles.md`.
-4. If touching a reusable UI pattern, read `guidelines/components.md`.
+4. Read `docs/color-reference.md` if touching color tokens or adding a new color role.
+5. If touching a reusable UI pattern, read `guidelines/components.md`.
 
 ## Prime directive
 
@@ -84,6 +85,12 @@ Do not use orange for:
 - selected tabs
 - links
 - success states
+
+### Reference Dim Sum before adding colors
+
+Bricks uses Dim Sum as its color reference library. If a new color role is genuinely required, read `docs/color-reference.md` and derive the value from `dawidsok/dim-sum-theme` before inventing a new color.
+
+Do not paste raw Dim Sum colors into components. Add or update semantic Bricks tokens first, then use those tokens.
 
 ### Use opacity for hierarchy
 

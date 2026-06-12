@@ -3,6 +3,22 @@
   "name": "Bricks Brutalist",
   "version": "0.1.0",
   "description": "Brutalist monochrome design tokens extracted from the Sunny 16 app.",
+  "$extensions": {
+    "bricks": {
+      "colorReference": {
+        "name": "Dim Sum",
+        "repository": "https://github.com/dawidsok/dim-sum-theme",
+        "role": "Reference palette family for color taste, neutral ramps, and future optional Bricks palette variants.",
+        "recommendedVariants": {
+          "strictDarkMonochrome": "dim-sum-mono",
+          "warmDark": "dim-sum",
+          "lightPaper": "dim-sum-paper",
+          "warmAccent": "dim-sum-sunset"
+        },
+        "documentation": "docs/color-reference.md"
+      }
+    }
+  },
   "color": {
     "$type": "color",
     "base": {

@@ -32,6 +32,7 @@ guidelines/
   components.md                 # component-level visual contracts
   style-principles.md           # human-readable system rules
 docs/
+  color-reference.md            # Dim Sum relationship and reference palettes
   extraction-notes.md           # mapping from Sunny 16 app styles to this system
 examples/
   css-usage.html                # minimal no-build example
@@ -83,6 +84,12 @@ Then use the CSS variables directly in utilities:
 - `tokens/bricks.tokens.json` is the canonical source.
 - `styles/tokens.css` is the practical runtime format for web apps.
 - `styles/tailwind-v4.css` exposes theme aliases for Tailwind v4 projects.
+
+## Color reference
+
+Bricks uses [Dim Sum](https://github.com/dawidsok/dim-sum-theme) as its broader color reference library. Bricks core stays stricter: monochrome surfaces, high-legibility foregrounds, and orange only for alert/off-target states. If new palette tokens are added later, derive their mood and values from Dim Sum before inventing new colors.
+
+See [`docs/color-reference.md`](docs/color-reference.md).
 
 ## Agent usage
 

@@ -4,6 +4,8 @@
 
 - Read `guidelines/agent-styling.md` before changing UI guidance or examples.
 - Use tokens from `tokens/bricks.tokens.json` and `styles/tokens.css`; do not invent component-local colors.
+- Read `docs/color-reference.md` before adding or changing color tokens.
+- Treat Dim Sum (`https://github.com/dawidsok/dim-sum-theme`) as the reference palette family for future color choices.
 - Preserve the brutalist contract: monospace only, square corners, hairline borders, no shadows, no gradients, no blur.
 - Orange is reserved for alert/off-target states only.
 - Components are guidelines/specs first. Do not add framework-specific component implementations unless explicitly requested.
