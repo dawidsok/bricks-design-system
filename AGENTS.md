@@ -3,7 +3,7 @@
 ## Critical styling rules
 
 - Read `guidelines/agent-styling.md` before changing UI guidance or examples.
-- Use tokens from `tokens/sunny-brutalist.tokens.json` and `styles/tokens.css`; do not invent component-local colors.
+- Use tokens from `tokens/bricks.tokens.json` and `styles/tokens.css`; do not invent component-local colors.
 - Preserve the brutalist contract: monospace only, square corners, hairline borders, no shadows, no gradients, no blur.
 - Orange is reserved for alert/off-target states only.
 - Components are guidelines/specs first. Do not add framework-specific component implementations unless explicitly requested.
@@ -21,7 +21,7 @@
 This repo currently has no build step. Before finishing changes:
 
 ```sh
-python3 -m json.tool tokens/sunny-brutalist.tokens.json >/dev/null
+python3 -m json.tool tokens/bricks.tokens.json >/dev/null
 ```
 
 Also manually scan examples/guidelines for forbidden styles:
@@ -35,7 +35,7 @@ rounded, shadow, gradient, blur, font-sans, font-serif, text-blue, text-green, t
 Use short imperative commit messages, for example:
 
 ```text
-Add initial Sunny Brutalist tokens
+Add initial Bricks Brutalist tokens
 Document drum wheel visual contract
 ```
 

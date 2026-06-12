@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Sunny Brutalist CSS Usage</title>
+    <title>Bricks Brutalist CSS Usage</title>
     <link rel="stylesheet" href="../styles/tokens.css" />
     <style>
       * {
@@ -13,9 +13,9 @@
       body {
         margin: 0;
         min-height: 100svh;
-        background: var(--s16-color-surface);
-        color: var(--s16-color-text-primary);
-        font-family: var(--s16-font-family-mono);
+        background: var(--bricks-color-surface);
+        color: var(--bricks-color-text-primary);
+        font-family: var(--bricks-font-family-mono);
       }
 
       .shell {
@@ -24,59 +24,59 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: var(--s16-space-8);
-        padding: var(--s16-space-4);
+        gap: var(--bricks-space-8);
+        padding: var(--bricks-space-4);
       }
 
       .wordmark {
-        font-size: var(--s16-font-size-sm);
+        font-size: var(--bricks-font-size-sm);
         text-transform: uppercase;
-        letter-spacing: var(--s16-letter-spacing-wordmark);
-        color: var(--s16-color-text-secondary);
+        letter-spacing: var(--bricks-letter-spacing-wordmark);
+        color: var(--bricks-color-text-secondary);
       }
 
       .readout {
-        font-size: var(--s16-font-size-xl);
-        font-weight: var(--s16-font-weight-bold);
-        letter-spacing: var(--s16-letter-spacing-readout);
+        font-size: var(--bricks-font-size-xl);
+        font-weight: var(--bricks-font-weight-bold);
+        letter-spacing: var(--bricks-letter-spacing-readout);
         font-variant-numeric: tabular-nums;
       }
 
       .readout[data-state="alert"] {
-        color: var(--s16-color-text-alert);
+        color: var(--bricks-color-text-alert);
       }
 
       .stack {
         width: 100%;
-        max-width: var(--s16-size-container-sm);
+        max-width: var(--bricks-size-container-sm);
         display: flex;
         flex-direction: column;
-        gap: var(--s16-space-6);
+        gap: var(--bricks-space-6);
       }
 
       .row {
         display: flex;
         align-items: center;
-        gap: var(--s16-space-2);
+        gap: var(--bricks-space-2);
         user-select: none;
       }
 
       .label {
-        width: var(--s16-size-wheel-label-width);
+        width: var(--bricks-size-wheel-label-width);
         flex-shrink: 0;
         text-align: right;
-        font-size: var(--s16-font-size-xs);
+        font-size: var(--bricks-font-size-xs);
         text-transform: uppercase;
-        letter-spacing: var(--s16-letter-spacing-label);
-        color: var(--s16-color-text-secondary);
+        letter-spacing: var(--bricks-letter-spacing-label);
+        color: var(--bricks-color-text-secondary);
       }
 
       .track {
         position: relative;
         flex: 1;
-        height: var(--s16-size-wheel-track-height);
+        height: var(--bricks-size-wheel-track-height);
         overflow: hidden;
-        touch-action: var(--s16-interaction-touch-action-drum);
+        touch-action: var(--bricks-interaction-touch-action-drum);
       }
 
       .track::after {
@@ -84,8 +84,8 @@
         position: absolute;
         inset-block: 0;
         left: 50%;
-        width: var(--s16-border-width-hairline);
-        background: var(--s16-color-rule-center);
+        width: var(--bricks-border-width-hairline);
+        background: var(--bricks-color-rule-center);
         transform: translateX(-50%);
       }
 
@@ -99,26 +99,26 @@
       }
 
       .item {
-        width: var(--s16-size-wheel-item-default);
+        width: var(--bricks-size-wheel-item-default);
         flex-shrink: 0;
         text-align: center;
-        font-size: var(--s16-font-size-sm);
-        opacity: var(--s16-opacity-inactive);
+        font-size: var(--bricks-font-size-sm);
+        opacity: var(--bricks-opacity-inactive);
       }
 
       .item[aria-current="true"] {
-        opacity: var(--s16-opacity-selected);
+        opacity: var(--bricks-opacity-selected);
       }
 
       .control {
-        width: var(--s16-size-control);
-        height: var(--s16-size-control);
+        width: var(--bricks-size-control);
+        height: var(--bricks-size-control);
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        border: var(--s16-border-width-hairline) solid var(--s16-color-border-muted);
-        border-radius: var(--s16-border-radius-none);
-        color: var(--s16-color-text-secondary);
+        border: var(--bricks-border-width-hairline) solid var(--bricks-color-border-muted);
+        border-radius: var(--bricks-border-radius-none);
+        color: var(--bricks-color-text-secondary);
         background: transparent;
         font: inherit;
       }
@@ -126,7 +126,7 @@
   </head>
   <body>
     <main class="shell">
-      <h1 class="wordmark">Sunny Brutalist</h1>
+      <h1 class="wordmark">Bricks Brutalist</h1>
       <div class="readout" data-state="alert">+1.3 EV</div>
 
       <section class="stack" aria-label="Example instrument controls">

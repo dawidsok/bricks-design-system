@@ -20,27 +20,27 @@ A single-purpose tool should use a full-screen centered column.
 ### Contract
 
 - Minimum height: full viewport.
-- Background: `--s16-color-surface`.
-- Text: `--s16-color-text-primary`.
+- Background: `--bricks-color-surface`.
+- Text: `--bricks-color-text-primary`.
 - Layout: centered flex column.
-- Section gap: `--s16-space-8`.
-- Padding: `--s16-space-4`; use safe-area padding on mobile.
-- Max content width for control stacks: `--s16-size-container-sm`.
+- Section gap: `--bricks-space-8`.
+- Padding: `--bricks-space-4`; use safe-area padding on mobile.
+- Max content width for control stacks: `--bricks-size-container-sm`.
 
 ### CSS sketch
 
 ```css
-.s16-app-shell {
+.bricks-app-shell {
   min-height: 100svh;
-  background: var(--s16-color-surface);
-  color: var(--s16-color-text-primary);
-  font-family: var(--s16-font-family-mono);
+  background: var(--bricks-color-surface);
+  color: var(--bricks-color-text-primary);
+  font-family: var(--bricks-font-family-mono);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: var(--s16-space-8);
-  padding: var(--s16-space-4);
+  gap: var(--bricks-space-8);
+  padding: var(--bricks-space-4);
 }
 ```
 
@@ -50,10 +50,10 @@ A quiet uppercase title, not a marketing masthead.
 
 ### Contract
 
-- Font size: `--s16-font-size-sm`.
+- Font size: `--bricks-font-size-sm`.
 - Uppercase.
-- Letter spacing: `--s16-letter-spacing-wordmark`.
-- Color: `--s16-color-text-secondary`.
+- Letter spacing: `--bricks-letter-spacing-wordmark`.
+- Color: `--bricks-color-text-secondary`.
 - Centered when used in the app shell.
 
 ### Example text
@@ -74,8 +74,8 @@ A permanent measurement/status line.
 - Centered.
 - Bold monospace.
 - Tabular numeric alignment.
-- Correct/neutral state uses `--s16-color-text-primary`.
-- Alert/off-target state uses `--s16-color-text-alert`.
+- Correct/neutral state uses `--bricks-color-text-primary`.
+- Alert/off-target state uses `--bricks-color-text-alert`.
 - Include sign or label in text; do not rely on color alone.
 
 ### Example
@@ -89,15 +89,15 @@ A permanent measurement/status line.
 ### CSS sketch
 
 ```css
-.s16-readout {
-  font-size: var(--s16-font-size-xl);
-  font-weight: var(--s16-font-weight-bold);
-  letter-spacing: var(--s16-letter-spacing-readout);
+.bricks-readout {
+  font-size: var(--bricks-font-size-xl);
+  font-weight: var(--bricks-font-weight-bold);
+  letter-spacing: var(--bricks-letter-spacing-readout);
   font-variant-numeric: tabular-nums;
 }
 
-.s16-readout[data-state="alert"] {
-  color: var(--s16-color-text-alert);
+.bricks-readout[data-state="alert"] {
+  color: var(--bricks-color-text-alert);
 }
 ```
 
@@ -108,11 +108,11 @@ A horizontal row combining a terse label, an interactive/mechanical region, and 
 ### Contract
 
 - Display: flex row, center aligned.
-- Gap: `--s16-space-2`.
-- Label width: `--s16-size-wheel-label-width`.
+- Gap: `--bricks-space-2`.
+- Label width: `--bricks-size-wheel-label-width`.
 - Label text: uppercase, extra small, secondary color.
 - Main region stretches.
-- Optional trailing control is square `--s16-size-control`.
+- Optional trailing control is square `--bricks-size-control`.
 
 ## Drum / Roller Guideline
 
@@ -120,13 +120,13 @@ A horizontal scroll strip with a fixed center selection point.
 
 ### Contract
 
-- Track height: `--s16-size-wheel-track-height` (`3.5rem`).
+- Track height: `--bricks-size-wheel-track-height` (`3.5rem`).
 - Overflow hidden.
-- Center pointer: vertical `1px` rule at 50% width using `--s16-color-rule-center`.
+- Center pointer: vertical `1px` rule at 50% width using `--bricks-color-rule-center`.
 - Item strip translates horizontally until selected item aligns with center pointer.
-- Default item slot width: `--s16-size-wheel-item-default` (`5rem`).
-- Compact item slot width: `--s16-size-wheel-item-compact` (`2rem`).
-- Long/condition item slot width: `--s16-size-wheel-item-condition` (`6rem`).
+- Default item slot width: `--bricks-size-wheel-item-default` (`5rem`).
+- Compact item slot width: `--bricks-size-wheel-item-compact` (`2rem`).
+- Long/condition item slot width: `--bricks-size-wheel-item-condition` (`6rem`).
 - Selected item opacity: `1`.
 - Non-selected item opacity: `0.3`.
 - Snap transition: `150ms` on release; no transition during drag.
@@ -136,7 +136,7 @@ A horizontal scroll strip with a fixed center selection point.
 
 - Drag horizontally to move between values.
 - Click/tap a non-selected item to snap to it.
-- Gestures below `--s16-interaction-drag-threshold` may be treated as click.
+- Gestures below `--bricks-interaction-drag-threshold` may be treated as click.
 - Locked state: track ignores pointer input but remains visually readable.
 
 ### Accessibility contract
@@ -151,11 +151,11 @@ Used for lock, theme, install, close, capture-adjacent controls, and icon-only u
 
 ### Contract
 
-- Width/height: `--s16-size-control` (`2rem`).
-- Border: `1px solid --s16-color-border-muted`.
-- Text/icon color: `--s16-color-text-secondary`.
-- Hover: border `--s16-color-border-hover`, text `--s16-color-text-subtle`.
-- Active/locked state: border and text `--s16-color-border-strong` / primary.
+- Width/height: `--bricks-size-control` (`2rem`).
+- Border: `1px solid --bricks-color-border-muted`.
+- Text/icon color: `--bricks-color-text-secondary`.
+- Hover: border `--bricks-color-border-hover`, text `--bricks-color-text-subtle`.
+- Active/locked state: border and text `--bricks-color-border-strong` / primary.
 - No border radius.
 - No filled background unless documented for a future variant.
 
@@ -177,8 +177,8 @@ Used for secondary actions such as switching modes.
 - Uppercase.
 - Wide tracking.
 - Hairline border.
-- Horizontal padding: `--s16-space-4`.
-- Vertical padding: `--s16-space-2`.
+- Horizontal padding: `--bricks-space-4`.
+- Vertical padding: `--bricks-space-2`.
 - Secondary color by default.
 - No accent color unless action is explicitly alert/off-target.
 
@@ -190,7 +190,7 @@ A compact bordered row that communicates a captured reading or current mode.
 
 - Full width of the control stack.
 - Border: hairline.
-- Padding: `--s16-space-4` horizontal, `--s16-space-3` vertical.
+- Padding: `--bricks-space-4` horizontal, `--bricks-space-3` vertical.
 - Layout: flex, space-between, center aligned.
 - Label: uppercase, tracking, secondary/subtle text.
 - Value: primary text, slightly larger or bold.
@@ -212,8 +212,8 @@ A rectangular preview region used for metering or visual targeting.
 - Background: black.
 - Media fills frame with `object-fit: cover`.
 - Center spot indicator: square overlay.
-- Spot size: `--s16-size-meter-spot`.
-- Spot border: `--s16-border-width-spot` solid white at roughly 60% opacity.
+- Spot size: `--bricks-size-meter-spot`.
+- Spot border: `--bricks-border-width-spot` solid white at roughly 60% opacity.
 - No rounded video corners.
 
 ## Metadata Hash
@@ -223,8 +223,8 @@ Tiny fixed-position technical metadata such as a build hash.
 ### Contract
 
 - Position: bottom-left.
-- Font size: `--s16-font-size-metadata`.
-- Color: `--s16-color-text-tertiary`.
+- Font size: `--bricks-font-size-metadata`.
+- Color: `--bricks-color-text-tertiary`.
 - Monospace.
 
 ## Empty / Permission Message
@@ -234,7 +234,7 @@ A rare prose pattern.
 ### Contract
 
 - Font size: small.
-- Text color: `--s16-color-text-subtle`.
+- Text color: `--bricks-color-text-subtle`.
 - Center aligned if replacing primary content.
 - Keep the wording direct and utilitarian.
 

@@ -1,39 +1,39 @@
 /*
- * Optional Tailwind CSS v4 aliases for Sunny Brutalist.
+ * Optional Tailwind CSS v4 aliases for Bricks Brutalist.
  * Import after `@import "tailwindcss";` and `styles/tokens.css`.
  */
 
 @theme {
-  --color-s16-surface: var(--s16-color-surface);
-  --color-s16-surface-inverse: var(--s16-color-surface-inverse);
-  --color-s16-text: var(--s16-color-text-primary);
-  --color-s16-text-secondary: var(--s16-color-text-secondary);
-  --color-s16-text-tertiary: var(--s16-color-text-tertiary);
-  --color-s16-text-muted: var(--s16-color-text-muted);
-  --color-s16-text-subtle: var(--s16-color-text-subtle);
-  --color-s16-alert: var(--s16-color-text-alert);
-  --color-s16-border: var(--s16-color-border-hairline);
-  --color-s16-border-muted: var(--s16-color-border-muted);
-  --color-s16-border-hover: var(--s16-color-border-hover);
-  --color-s16-rule: var(--s16-color-rule-center);
+  --color-bricks-surface: var(--bricks-color-surface);
+  --color-bricks-surface-inverse: var(--bricks-color-surface-inverse);
+  --color-bricks-text: var(--bricks-color-text-primary);
+  --color-bricks-text-secondary: var(--bricks-color-text-secondary);
+  --color-bricks-text-tertiary: var(--bricks-color-text-tertiary);
+  --color-bricks-text-muted: var(--bricks-color-text-muted);
+  --color-bricks-text-subtle: var(--bricks-color-text-subtle);
+  --color-bricks-alert: var(--bricks-color-text-alert);
+  --color-bricks-border: var(--bricks-color-border-hairline);
+  --color-bricks-border-muted: var(--bricks-color-border-muted);
+  --color-bricks-border-hover: var(--bricks-color-border-hover);
+  --color-bricks-rule: var(--bricks-color-rule-center);
 
-  --font-s16-mono: var(--s16-font-family-mono);
+  --font-bricks-mono: var(--bricks-font-family-mono);
 
-  --text-s16-xs: var(--s16-font-size-xs);
-  --text-s16-sm: var(--s16-font-size-sm);
-  --text-s16-base: var(--s16-font-size-base);
-  --text-s16-lg: var(--s16-font-size-lg);
-  --text-s16-xl: var(--s16-font-size-xl);
-  --text-s16-display: var(--s16-font-size-display);
-  --text-s16-metadata: var(--s16-font-size-metadata);
+  --text-bricks-xs: var(--bricks-font-size-xs);
+  --text-bricks-sm: var(--bricks-font-size-sm);
+  --text-bricks-base: var(--bricks-font-size-base);
+  --text-bricks-lg: var(--bricks-font-size-lg);
+  --text-bricks-xl: var(--bricks-font-size-xl);
+  --text-bricks-display: var(--bricks-font-size-display);
+  --text-bricks-metadata: var(--bricks-font-size-metadata);
 
-  --spacing-s16-1: var(--s16-space-1);
-  --spacing-s16-2: var(--s16-space-2);
-  --spacing-s16-3: var(--s16-space-3);
-  --spacing-s16-4: var(--s16-space-4);
-  --spacing-s16-6: var(--s16-space-6);
-  --spacing-s16-8: var(--s16-space-8);
-  --spacing-s16-10: var(--s16-space-10);
+  --spacing-bricks-1: var(--bricks-space-1);
+  --spacing-bricks-2: var(--bricks-space-2);
+  --spacing-bricks-3: var(--bricks-space-3);
+  --spacing-bricks-4: var(--bricks-space-4);
+  --spacing-bricks-6: var(--bricks-space-6);
+  --spacing-bricks-8: var(--bricks-space-8);
+  --spacing-bricks-10: var(--bricks-space-10);
 
-  --radius-s16-none: var(--s16-border-radius-none);
+  --radius-bricks-none: var(--bricks-border-radius-none);
 }

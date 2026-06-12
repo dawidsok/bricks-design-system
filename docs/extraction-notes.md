@@ -46,11 +46,11 @@ text-orange-500 dark:text-orange-400
 The design system maps these into semantic CSS variables:
 
 ```text
---s16-color-surface
---s16-color-text-primary
---s16-color-text-secondary
---s16-color-border-muted
---s16-color-text-alert
+--bricks-color-surface
+--bricks-color-text-primary
+--bricks-color-text-secondary
+--bricks-color-border-muted
+--bricks-color-text-alert
 ```
 
 ### Dark-first heritage, light-compatible tokens
@@ -68,21 +68,21 @@ The design system intentionally does not ship React components yet. Component be
 
 | Role | Original value | Token |
 |---|---|---|
-| Dark background | `#000000` / `bg-black` | `--s16-color-surface` in dark |
-| Light background | `#f5f5f4` / `bg-stone-100` | `--s16-color-surface` in light |
-| Dark primary text | `#ffffff` / `text-white` | `--s16-color-text-primary` in dark |
-| Light primary text | `#000000` / `text-black` | `--s16-color-text-primary` in light |
-| Secondary text | 40% foreground | `--s16-color-text-secondary` |
-| Tertiary text | 20% foreground | `--s16-color-text-tertiary` |
-| Muted/inactive | 30% foreground | `--s16-color-text-muted`, `--s16-opacity-inactive` |
-| Alert dark | Tailwind `orange-400` / `#fb923c` | `--s16-color-text-alert` in dark |
-| Alert light | Tailwind `orange-500` / `#f97316` | `--s16-color-text-alert` in light |
-| Track height | `h-14` / `56px` | `--s16-size-wheel-track-height` |
-| Control size | `w-8 h-8` / `32px` | `--s16-size-control` |
-| Label width | `w-10` / `40px` | `--s16-size-wheel-label-width` |
-| Max stack width | `max-w-sm` / `24rem` | `--s16-size-container-sm` |
-| Snap duration | `150ms` | `--s16-motion-duration-fast` |
-| Drag threshold | `5px` | `--s16-interaction-drag-threshold` |
+| Dark background | `#000000` / `bg-black` | `--bricks-color-surface` in dark |
+| Light background | `#f5f5f4` / `bg-stone-100` | `--bricks-color-surface` in light |
+| Dark primary text | `#ffffff` / `text-white` | `--bricks-color-text-primary` in dark |
+| Light primary text | `#000000` / `text-black` | `--bricks-color-text-primary` in light |
+| Secondary text | 40% foreground | `--bricks-color-text-secondary` |
+| Tertiary text | 20% foreground | `--bricks-color-text-tertiary` |
+| Muted/inactive | 30% foreground | `--bricks-color-text-muted`, `--bricks-opacity-inactive` |
+| Alert dark | Tailwind `orange-400` / `#fb923c` | `--bricks-color-text-alert` in dark |
+| Alert light | Tailwind `orange-500` / `#f97316` | `--bricks-color-text-alert` in light |
+| Track height | `h-14` / `56px` | `--bricks-size-wheel-track-height` |
+| Control size | `w-8 h-8` / `32px` | `--bricks-size-control` |
+| Label width | `w-10` / `40px` | `--bricks-size-wheel-label-width` |
+| Max stack width | `max-w-sm` / `24rem` | `--bricks-size-container-sm` |
+| Snap duration | `150ms` | `--bricks-motion-duration-fast` |
+| Drag threshold | `5px` | `--bricks-interaction-drag-threshold` |
 
 ## Open questions for future versions
 

@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for improving Sunny 16 Design System.
+Thanks for improving Bricks Design System.
 
 ## Scope
 
@@ -24,7 +24,7 @@ Out of scope unless discussed first:
 Validate token JSON:
 
 ```sh
-python3 -m json.tool tokens/sunny-brutalist.tokens.json >/dev/null
+python3 -m json.tool tokens/bricks.tokens.json >/dev/null
 ```
 
 Search for forbidden styling drift before opening a PR:

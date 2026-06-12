@@ -1,4 +1,4 @@
-# Sunny 16 Design System
+# Bricks Design System
 
 A brutalist, instrument-panel design system extracted from the [Sunny 16](https://github.com/dawidsok/sunny-16) film photography exposure calculator.
 
@@ -23,7 +23,7 @@ The system starts as **tokens + guidelines**, not a component library. Component
 
 ```text
 tokens/
-  sunny-brutalist.tokens.json   # canonical design tokens
+  bricks.tokens.json   # canonical design tokens
 styles/
   tokens.css                    # CSS custom properties generated/maintained from tokens
   tailwind-v4.css               # optional Tailwind v4 theme aliases
@@ -47,9 +47,9 @@ Copy or import `styles/tokens.css`:
 @import "./styles/tokens.css";
 
 .app {
-  background: var(--s16-color-surface);
-  color: var(--s16-color-text-primary);
-  font-family: var(--s16-font-family-mono);
+  background: var(--bricks-color-surface);
+  color: var(--bricks-color-text-primary);
+  font-family: var(--bricks-font-family-mono);
 }
 ```
 
@@ -71,8 +71,8 @@ Copy or import `styles/tailwind-v4.css` after Tailwind is available:
 Then use the CSS variables directly in utilities:
 
 ```tsx
-<main className="min-h-screen bg-[var(--s16-color-surface)] text-[var(--s16-color-text-primary)] font-mono">
-  <h1 className="text-sm uppercase tracking-[var(--s16-letter-spacing-wordmark)] text-[var(--s16-color-text-secondary)]">
+<main className="min-h-screen bg-[var(--bricks-color-surface)] text-[var(--bricks-color-text-primary)] font-mono">
+  <h1 className="text-sm uppercase tracking-[var(--bricks-letter-spacing-wordmark)] text-[var(--bricks-color-text-secondary)]">
     App Name
   </h1>
 </main>
@@ -80,7 +80,7 @@ Then use the CSS variables directly in utilities:
 
 ## Token formats
 
-- `tokens/sunny-brutalist.tokens.json` is the canonical source.
+- `tokens/bricks.tokens.json` is the canonical source.
 - `styles/tokens.css` is the practical runtime format for web apps.
 - `styles/tailwind-v4.css` exposes theme aliases for Tailwind v4 projects.
 
@@ -89,7 +89,7 @@ Then use the CSS variables directly in utilities:
 When asking an AI coding agent to style an app with this system, include:
 
 ```text
-Follow Sunny 16 Design System. Read guidelines/agent-styling.md first.
+Follow Bricks Design System. Read guidelines/agent-styling.md first.
 Use tokens from styles/tokens.css. Do not introduce rounded corners, shadows,
 gradients, proportional fonts, or extra accent colors. Components are guidelines,
 not imported implementations.

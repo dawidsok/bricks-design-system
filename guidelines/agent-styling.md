@@ -1,6 +1,6 @@
 # Agent Styling Guidelines
 
-These instructions are for AI coding agents implementing UI with Sunny Brutalist.
+These instructions are for AI coding agents implementing UI with Bricks Brutalist.
 
 ## Read this first
 
@@ -24,15 +24,15 @@ If a styling choice makes the UI softer, friendlier, glossy, colorful, or card-l
 Prefer CSS variables from `styles/tokens.css`:
 
 ```css
-color: var(--s16-color-text-primary);
-border-color: var(--s16-color-border-muted);
-font-family: var(--s16-font-family-mono);
+color: var(--bricks-color-text-primary);
+border-color: var(--bricks-color-border-muted);
+font-family: var(--bricks-font-family-mono);
 ```
 
 Tailwind arbitrary values are acceptable when they reference tokens:
 
 ```tsx
-className="bg-[var(--s16-color-surface)] text-[var(--s16-color-text-primary)]"
+className="bg-[var(--bricks-color-surface)] text-[var(--bricks-color-text-primary)]"
 ```
 
 Avoid hard-coded colors unless you are updating the design-system token files themselves.
@@ -42,7 +42,7 @@ Avoid hard-coded colors unless you are updating the design-system token files th
 Every component and page shell must inherit or explicitly set:
 
 ```css
-font-family: var(--s16-font-family-mono);
+font-family: var(--bricks-font-family-mono);
 ```
 
 Do not introduce app-default sans-serif type.
@@ -52,7 +52,7 @@ Do not introduce app-default sans-serif type.
 Use:
 
 ```css
-border-radius: var(--s16-border-radius-none);
+border-radius: var(--bricks-border-radius-none);
 ```
 
 Do not use:
@@ -116,16 +116,16 @@ When using Tailwind, prefer these patterns:
 
 ```tsx
 // Page shell
-<main className="min-h-screen bg-[var(--s16-color-surface)] text-[var(--s16-color-text-primary)] font-mono flex flex-col items-center justify-center gap-8 p-4" />
+<main className="min-h-screen bg-[var(--bricks-color-surface)] text-[var(--bricks-color-text-primary)] font-mono flex flex-col items-center justify-center gap-8 p-4" />
 
 // Label
-<span className="text-xs uppercase tracking-[var(--s16-letter-spacing-label)] text-[var(--s16-color-text-secondary)]" />
+<span className="text-xs uppercase tracking-[var(--bricks-letter-spacing-label)] text-[var(--bricks-color-text-secondary)]" />
 
 // Square control
-<button className="w-8 h-8 border border-[var(--s16-color-border-muted)] text-[var(--s16-color-text-secondary)] hover:border-[var(--s16-color-border-hover)] hover:text-[var(--s16-color-text-subtle)] transition-colors" />
+<button className="w-8 h-8 border border-[var(--bricks-color-border-muted)] text-[var(--bricks-color-text-secondary)] hover:border-[var(--bricks-color-border-hover)] hover:text-[var(--bricks-color-text-subtle)] transition-colors" />
 
 // Alert readout
-<div className="text-2xl font-bold tracking-[var(--s16-letter-spacing-readout)] tabular-nums text-[var(--s16-color-text-alert)]" />
+<div className="text-2xl font-bold tracking-[var(--bricks-letter-spacing-readout)] tabular-nums text-[var(--bricks-color-text-alert)]" />
 ```
 
 Avoid these classes:

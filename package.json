@@ -1,5 +1,5 @@
 {
-  "name": "sunny-16-design-system",
+  "name": "bricks-design-system",
   "version": "0.1.0",
   "description": "Brutalist design tokens and styling guidelines extracted from Sunny 16.",
   "type": "module",
@@ -12,12 +12,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dawidsok/sunny-16-design-system.git"
+    "url": "git+https://github.com/dawidsok/bricks-design-system.git"
   },
   "bugs": {
-    "url": "https://github.com/dawidsok/sunny-16-design-system/issues"
+    "url": "https://github.com/dawidsok/bricks-design-system/issues"
   },
-  "homepage": "https://github.com/dawidsok/sunny-16-design-system#readme",
+  "homepage": "https://github.com/dawidsok/bricks-design-system#readme",
   "keywords": [
     "design-system",
     "design-tokens",

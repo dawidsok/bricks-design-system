@@ -1,8 +1,8 @@
-# Sunny Brutalist Style Principles
+# Bricks Brutalist Style Principles
 
 ## The contract
 
-Sunny Brutalist is a design language for small, focused tools that should feel like physical instruments: camera dials, labels etched into a panel, measurement readouts, and sparse controls.
+Bricks Brutalist is a design language for small, focused tools that should feel like physical instruments: camera dials, labels etched into a panel, measurement readouts, and sparse controls.
 
 It is not generic minimalism. It is deliberately strict.
 
@@ -55,15 +55,15 @@ Use `.dark` or `[data-theme="dark"]` on a root element to switch CSS variables.
 
 | Role | Token | Usage |
 |---|---|---|
-| Surface | `--s16-color-surface` | Page/app background |
-| Primary text | `--s16-color-text-primary` | Selected values, critical readouts |
-| Secondary text | `--s16-color-text-secondary` | Labels, low-priority controls |
-| Tertiary text | `--s16-color-text-tertiary` | Metadata/version hashes |
-| Muted text | `--s16-color-text-muted` | Inactive wheel items, faint UI |
-| Subtle text | `--s16-color-text-subtle` | Supporting details |
-| Alert text | `--s16-color-text-alert` | Off-target measurement, warning, exposure mismatch |
-| Hairline border | `--s16-color-border-hairline` | Badges, secondary buttons |
-| Strong border | `--s16-color-border-strong` | Locked/active square controls |
+| Surface | `--bricks-color-surface` | Page/app background |
+| Primary text | `--bricks-color-text-primary` | Selected values, critical readouts |
+| Secondary text | `--bricks-color-text-secondary` | Labels, low-priority controls |
+| Tertiary text | `--bricks-color-text-tertiary` | Metadata/version hashes |
+| Muted text | `--bricks-color-text-muted` | Inactive wheel items, faint UI |
+| Subtle text | `--bricks-color-text-subtle` | Supporting details |
+| Alert text | `--bricks-color-text-alert` | Off-target measurement, warning, exposure mismatch |
+| Hairline border | `--bricks-color-border-hairline` | Badges, secondary buttons |
+| Strong border | `--bricks-color-border-strong` | Locked/active square controls |
 
 ## Typographic rhythm
 
@@ -75,19 +75,19 @@ Use `.dark` or `[data-theme="dark"]` on a root element to switch CSS variables.
 Recommended CSS patterns:
 
 ```css
-.s16-wordmark {
-  font-family: var(--s16-font-family-mono);
-  font-size: var(--s16-font-size-sm);
+.bricks-wordmark {
+  font-family: var(--bricks-font-family-mono);
+  font-size: var(--bricks-font-size-sm);
   text-transform: uppercase;
-  letter-spacing: var(--s16-letter-spacing-wordmark);
-  color: var(--s16-color-text-secondary);
+  letter-spacing: var(--bricks-letter-spacing-wordmark);
+  color: var(--bricks-color-text-secondary);
 }
 
-.s16-readout {
-  font-family: var(--s16-font-family-mono);
-  font-size: var(--s16-font-size-xl);
-  font-weight: var(--s16-font-weight-bold);
-  letter-spacing: var(--s16-letter-spacing-readout);
+.bricks-readout {
+  font-family: var(--bricks-font-family-mono);
+  font-size: var(--bricks-font-size-xl);
+  font-weight: var(--bricks-font-weight-bold);
+  letter-spacing: var(--bricks-letter-spacing-readout);
   font-variant-numeric: tabular-nums;
 }
 ```
@@ -95,11 +95,11 @@ Recommended CSS patterns:
 ## Layout rhythm
 
 - Full-screen tools are centered columns.
-- Outer padding: `--s16-space-4`, adjusted for safe areas on mobile.
-- Major vertical gaps: `--s16-space-8`.
-- Repeated rows: `--s16-space-6`.
-- Inline row control gaps: `--s16-space-2`.
-- Narrow tool column: `--s16-size-container-sm` (`24rem`).
+- Outer padding: `--bricks-space-4`, adjusted for safe areas on mobile.
+- Major vertical gaps: `--bricks-space-8`.
+- Repeated rows: `--bricks-space-6`.
+- Inline row control gaps: `--bricks-space-2`.
+- Narrow tool column: `--bricks-size-container-sm` (`24rem`).
 
 ## Motion
 

@@ -1,6 +1,6 @@
 {
   "$schema": "https://design-tokens.github.io/community-group/format/schema.json",
-  "name": "Sunny Brutalist",
+  "name": "Bricks Brutalist",
   "version": "0.1.0",
   "description": "Brutalist monochrome design tokens extracted from the Sunny 16 app.",
   "color": {
