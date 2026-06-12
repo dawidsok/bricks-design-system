@@ -1,0 +1,111 @@
+/*
+ * Sunny Brutalist tokens
+ * Source: tokens/sunny-brutalist.tokens.json
+ * Theme switch: add `.dark` or `[data-theme="dark"]` to a root element.
+ */
+
+:root {
+  color-scheme: light;
+
+  /* Color — base */
+  --s16-color-black: #000000;
+  --s16-color-white: #ffffff;
+  --s16-color-stone-100: #f5f5f4;
+  --s16-color-orange-400: #fb923c;
+  --s16-color-orange-500: #f97316;
+
+  /* Color — semantic */
+  --s16-color-surface: #f5f5f4;
+  --s16-color-surface-inverse: #000000;
+  --s16-color-text-primary: #000000;
+  --s16-color-text-secondary: rgba(0, 0, 0, 0.4);
+  --s16-color-text-tertiary: rgba(0, 0, 0, 0.2);
+  --s16-color-text-muted: rgba(0, 0, 0, 0.3);
+  --s16-color-text-subtle: rgba(0, 0, 0, 0.6);
+  --s16-color-text-alert: #f97316;
+  --s16-color-border-hairline: rgba(0, 0, 0, 0.2);
+  --s16-color-border-muted: rgba(0, 0, 0, 0.3);
+  --s16-color-border-hover: rgba(0, 0, 0, 0.6);
+  --s16-color-border-strong: #000000;
+  --s16-color-rule-center: rgba(0, 0, 0, 0.3);
+
+  /* Typography */
+  --s16-font-family-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --s16-font-size-xs: 0.75rem;
+  --s16-font-size-sm: 0.875rem;
+  --s16-font-size-base: 1rem;
+  --s16-font-size-lg: 1.125rem;
+  --s16-font-size-xl: 1.5rem;
+  --s16-font-size-display: 3.75rem;
+  --s16-font-size-metadata: 0.625rem;
+  --s16-font-weight-regular: 400;
+  --s16-font-weight-bold: 700;
+  --s16-font-weight-black: 900;
+  --s16-line-height-none: 1;
+  --s16-line-height-tight: 1.1;
+  --s16-line-height-normal: 1.5;
+  --s16-letter-spacing-label: 0.1em;
+  --s16-letter-spacing-readout: 0.1em;
+  --s16-letter-spacing-wordmark: 0.4em;
+
+  /* Spacing */
+  --s16-space-0: 0;
+  --s16-space-1: 0.25rem;
+  --s16-space-2: 0.5rem;
+  --s16-space-3: 0.75rem;
+  --s16-space-4: 1rem;
+  --s16-space-6: 1.5rem;
+  --s16-space-8: 2rem;
+  --s16-space-10: 2.5rem;
+
+  /* Size */
+  --s16-size-control: 2rem;
+  --s16-size-wheel-track-height: 3.5rem;
+  --s16-size-wheel-item-default: 5rem;
+  --s16-size-wheel-item-compact: 2rem;
+  --s16-size-wheel-item-condition: 6rem;
+  --s16-size-wheel-label-width: 2.5rem;
+  --s16-size-container-sm: 24rem;
+  --s16-size-meter-spot: 1.5rem;
+
+  /* Border */
+  --s16-border-radius-none: 0;
+  --s16-border-width-hairline: 1px;
+  --s16-border-width-spot: 2px;
+
+  /* Opacity */
+  --s16-opacity-selected: 1;
+  --s16-opacity-inactive: 0.3;
+  --s16-opacity-disabled: 0.3;
+  --s16-opacity-secondary: 0.4;
+  --s16-opacity-tertiary: 0.2;
+  --s16-opacity-subtle: 0.6;
+
+  /* Motion */
+  --s16-motion-duration-fast: 150ms;
+  --s16-motion-easing-snap: cubic-bezier(0, 0, 0.2, 1);
+
+  /* Interaction */
+  --s16-interaction-drag-threshold: 5px;
+  --s16-interaction-touch-action-drum: none;
+}
+
+:root.dark,
+:root[data-theme="dark"],
+.dark,
+[data-theme="dark"] {
+  color-scheme: dark;
+  --s16-color-surface: #000000;
+  --s16-color-surface-inverse: #ffffff;
+  --s16-color-text-primary: #ffffff;
+  --s16-color-text-secondary: rgba(255, 255, 255, 0.4);
+  --s16-color-text-tertiary: rgba(255, 255, 255, 0.2);
+  --s16-color-text-muted: rgba(255, 255, 255, 0.3);
+  --s16-color-text-subtle: rgba(255, 255, 255, 0.6);
+  --s16-color-text-alert: #fb923c;
+  --s16-color-border-hairline: rgba(255, 255, 255, 0.2);
+  --s16-color-border-muted: rgba(255, 255, 255, 0.3);
+  --s16-color-border-hover: rgba(255, 255, 255, 0.6);
+  --s16-color-border-strong: #ffffff;
+  --s16-color-rule-center: rgba(255, 255, 255, 0.3);
+}

@@ -1,0 +1,38 @@
+{
+  "name": "sunny-16-design-system",
+  "version": "0.1.0",
+  "description": "Brutalist design tokens and styling guidelines extracted from Sunny 16.",
+  "type": "module",
+  "private": false,
+  "author": {
+    "name": "Dawid Sokół",
+    "email": "dave@okhy.pl",
+    "url": "https://github.com/dawidsok"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dawidsok/sunny-16-design-system.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dawidsok/sunny-16-design-system/issues"
+  },
+  "homepage": "https://github.com/dawidsok/sunny-16-design-system#readme",
+  "keywords": [
+    "design-system",
+    "design-tokens",
+    "brutalist",
+    "css-variables",
+    "tailwindcss",
+    "photography"
+  ],
+  "files": [
+    "tokens",
+    "styles",
+    "guidelines",
+    "docs",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ]
+}
